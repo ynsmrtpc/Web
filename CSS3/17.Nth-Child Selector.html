@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth-Child Selector</title>
+
+    <style>
+
+        p{
+            font-size: 1.5em;         
+        }
+
+        ul {
+            font-size: 1.5em;
+            list-style: none;
+        }
+        /*n = 0, b = 0 ,  0,2,4,6,8,10s */
+        ul li:nth-child(2n){
+            color: greenyellow;
+        }
+        ul li:nth-child(2n+1){
+            color: violet
+        }
+
+        ul li:nth-child(n+4) {
+            background: black;
+        }
+        /* p:nth-child(1){
+            color: red;
+        }
+        p:nth-child(2){
+            color: orange;
+        }
+        p:nth-child(3) {
+            color: blue;
+        }
+        p:nth-child(4){
+            color: violet;
+        }
+        p:nth-child(5){
+            color: greenyellow;
+        } */
+
+        /* p:nth-child(even) {
+            color: red;
+        }
+        p:nth-child(odd) {
+            color: blue;
+        } 
+        KULLANIMI -->> an + b şeklinde yapılabilir, örn:5'ten sonrakileri seç vs: . . .
+        n = 0, b = 0 'dan başlamak zorunda...
+        */
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, velit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, velit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, velit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, velit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, velit?</p> -->
+<ul>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+    <li>Element</li>
+</ul>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Examples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=round -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=sharp -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=twotone -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+    <link rel="stylesheet" href="/Projects/all-js/style.css">
+</head>
+
+<body>
+    <hr style="color:fuchsia">
+    <h1 style="text-align: center;" id="h2">İstediğiniz Yazı Stilini Deneyin!</h1>
+    <hr style="color:darkturquoise" size="5px">
+    <br>
+    <h1 style="text-align: center;" id="h1"></h1>
+    <br>
+    <hr style="color: darkorchid;" size="5 px">
+    <div style="margin: 1% 42%;">
+
+        <!-- Renk Değiştirme -->
+        <div id="clr" style="border-color:fuchsia; border-radius: 12px; border-style: double;" class="btn btn-light d-block">
+            Rengi Değiştir
+            <input class="animate__bounceIn form-control" type="text" name="new_text" id="color-text" placeholder="Rengi buraya yazın...">
+        </div>
+
+        <!-- Yazı Değiştirme -->
+        <div id="clr-text" style="border-color:violet; border-radius: 12px; border-style: double;" class="btn btn-light d-block" onclick='yaziDegistir()'>
+            Yazıyı Değiştir
+            <input class="animate__bounceIn form-control" type="text" name="new_text" id="text" placeholder="Yazıyı buraya yazın...">
+        </div>
+
+        <!-- Font Değiştirme -->
+        <div id="clr-font" style="border-color:#bc6dbc; border-radius: 12px; border-style: double;" class="btn btn-light d-block">
+            Fontu Değiştir
+            <input class="animate__bounceIn form-control" type="text" name="new_text" id="font_text" placeholder="Fontu buraya yazın...">
+        </div>
+
+        <!-- Geri Alma ve Değişiklikleri Uygulama -->
+        <div id="change" style="border-color: blueviolet; border-radius: 12px; border-style: double;" class="btn btn-light d-block" onclick='degistir()'>Tüm Değişiklikleri Uygula</div>
+        <div style="border-color:cyan; border-radius: 12px; border-style: double;" class="btn btn-light d-block" onclick='gerial()'>Tümünü Sil</div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

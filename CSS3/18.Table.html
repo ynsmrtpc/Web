@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, tr ,td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table {
+            width: 50%;
+            margin: 0 auto;
+            font-size: 1.5em;
+        }
+        th, td {
+            padding: 10px;
+        }
+        thead tr {
+            background: greenyellow;
+            color: white;
+            text-shadow: 2px 2px 5px black;  
+            }
+        tbody tr {
+            text-align: center;
+            
+        }
+        tbody tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        tbody tr:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Depertment</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Yunus</td>
+                <td>Software</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>Yunus</td>
+                <td>Software</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>Yunus</td>
+                <td>Software</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>Yunus</td>
+                <td>Software</td>
+                <td>1500</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

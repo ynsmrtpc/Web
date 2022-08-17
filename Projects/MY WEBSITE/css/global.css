@@ -1,0 +1,36 @@
+.text-color-pink {
+    color: #e72a51;
+}
+
+.card-abilities {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #41195f;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.card-photo {
+    height: 200px;
+    width: auto;
+}
+
+.starDiv {
+    width: 100px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+}
+
+.star {
+    width: 20px;
+    height: auto;
+    display: inline;
+}
+
+.socialmedia-icon {
+    width: 1.80rem;
+    height: auto;
+    margin-right: 10px;
+}

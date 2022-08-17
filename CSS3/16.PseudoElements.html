@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElements</title>
+
+    <style>
+        .para1 {
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+
+        .para1::first-line {
+            color: red;
+        }
+
+        .para1::first-letter {
+            color: blue;
+            font-size: 50px;
+        }
+
+        .para1::after {
+            content: "Paragraf Sonrası";
+        }
+
+        .para1::before {
+            content: url("https://freight.cargo.site/w/100/q/75/i/a0e492152aa8c83f66bb74972aff66529bbca0dce581d2f557a0e4b02f203824/Insta.png");
+        }
+    </style>
+</head>
+
+
+<body>
+    <p class="para1"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed earum et hic explicabo quibusdam
+        corrupti pariatur nihil voluptates dolorem cupiditate nulla repudiandae fuga facere blanditiis, quam itaque
+        iusto fugiat doloremque aliquam voluptatem, vel dolorum delectus? Porro culpa quisquam ratione commodi eligendi
+        dolorem impedit minus cupiditate, repellendus similique inventore? Obcaecati eligendi architecto similique nulla
+        fugit corporis saepe neque quasi consequatur? Laborum eaque ea, velit ullam numquam itaque consequatur porro ab?
+        Nemo dolores voluptates sequi laborum tenetur consequuntur tempora at nam adipisci dolor reiciendis eius,
+        repellendus alias minima sed animi voluptas ullam ea commodi dicta beatae porro. Sapiente numquam repellendus
+        rem commodi.</p>
+</body>
+
+</html>

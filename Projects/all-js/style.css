@@ -1,0 +1,52 @@
+#color-text {
+    display: none;
+}
+
+#text {
+    display: none;
+}
+
+#font_text {
+    display: none;
+}
+
+.form-control {
+    border-radius: 12px !important;
+}
+
+#color-text:focus {
+    border-color: white !important;
+    box-shadow: 0 0 0 0.10rem fuchsia;
+}
+
+#text:focus {
+    border-color: white !important;
+    box-shadow: 0 0 0 0.10rem violet;
+}
+
+#font_text:focus {
+    border-color: white !important;
+    box-shadow: 0 0 0 0.10rem #bc6dbc;
+}
+
+#change:hover {
+    background-color: cyan;
+    color: white;
+    text-shadow: black;
+}
+
+#h2 {
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%, rgb(0, 255, 255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 50s linear infinite forwards;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 500vw;
+    }
+}

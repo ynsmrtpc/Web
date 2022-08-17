@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Design & Units</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /**em = parent'ın size'ını 1.5 ile çarpar*/
+            /*rem = html'in size'ına orantılıdır*/
+            /* html {
+                font-size: 10px;
+            }
+            div {
+                font-size : 1.5em;
+                width: 40vw;
+                height: 10vh;
+                background: black;
+            } */
+            /* p {
+                font-size : 1.5em;
+                padding: 1.5em; /*kendi elementimizin font-size'ına göre ayarlanır
+            font-size: 50%; html'in font-size'ının yüzde 50'si uygulanır
+            }*/
+
+            /*
+            sayfanın,
+            yatay eksenindeki genişlik viewportwitdh  (vw)
+            dikey eksenindeki genişlik viewportheight (vh)
+            */
+
+            .background {
+                background: url(./images/Adsız.jpg) center center no-repeat;
+                background-size: cover;
+                width: 2150h;
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+                align-items: center;
+                padding: 14rem;
+            }
+
+            .introduction {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                /* margin-bottom: 1rem; */
+                font-size: 3rem;
+                /* padding-top: 1em;  */
+                box-sizing: border-box;
+                display: inline-block;
+            }
+
+            p {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+
+            @media(max-width: 768px) {
+                h1 {
+                    margin-bottom: 0.5rem;
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .background {
+                    overflow: hidden;
+                }
+            }
+            
+            @media(min-width: 576px) {
+                    h1 {
+                        margin-bottom: 0.5rem;
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+
+                     .background {
+                        overflow: hidden;
+                    } 
+                }
+        </style>
+    </head>
+
+    <body>
+        <!-- <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, in.
+            </p>
+        </div> -->
+
+        <div class="background">
+            <h1>Welcome to the site</h1>
+        </div>
+        <div class="introduction">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, commodi.
+            </p>
+        </div>
+    </body>
+
+</html>

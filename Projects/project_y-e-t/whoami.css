@@ -1,0 +1,75 @@
+* {
+    box-sizing: border box;
+}
+
+.it-is-me,
+.about-me,
+.portfolio,
+.contact {
+    height: 50vh;
+    width: 100%;
+    display: inline-block;
+}
+
+@media (min-with:768px) {
+    .portfolio,
+    .it-is-me,
+    .about-me,
+    .contact {
+        height: 100vh;
+    }
+}
+
+.i-about-me,
+.i-hello,
+.i-portfolio,
+.i-contact {
+    letter-spacing: 4em;
+    line-height: 4em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    /* border: 4em solid black; */
+    border-block: solid;
+    writing-mode: horizontal-fi;
+    direction: rt1;
+    filter: blur(1px);
+    margin-top: 9rem;
+    /* align-items: center; */
+}
+
+.i-about-me:hover,
+.i-hello:hover,
+.i-portfolio:hover,
+.i-contact:hover {
+    background: none;
+    filter: blur(0px);
+    border:  solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.it-is-me {
+    background: lightcoral;
+    text-align: center;
+    display: inline-block;
+}
+
+.portfolio {
+    background: cyan;
+    text-align: center;
+    display: inline-block;
+}
+
+.about-me {
+    background: blueviolet;
+    text-align: center;
+    display: inline-block;
+}
+
+.contact {
+    background: yellowgreen;
+    text-align: center;
+    display: inline-block;
+}

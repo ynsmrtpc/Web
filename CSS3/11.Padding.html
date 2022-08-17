@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /*bu şekilde tüm box'larda geçerli olamasını sağlayabiliriz.*/
+        }
+
+        div.box-1{
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 40px; 
+            /* box-sizing: border-box;  */
+            /* padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;  */
+            /*padding: 20px 20px 20px 20px; padding: 20px;
+            padding 20px 50px; // top-bottom, rigt-left*/
+
+        }
+        div.box-2{
+            width: 500px;
+            height: 200px;
+            margin-top: 2px;
+            border: 5px solid blueviolet;
+            padding: 100px; /*NORMALDE 710PX OLMASI GEREKİRKEN*/
+            /* box-sizing: border-box; BU ÖZELLİK SAYESİNDE 500PX OLUYOR */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quis.</div>
+    <div class="box-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quis.</div>
+</body>
+
+</html>
